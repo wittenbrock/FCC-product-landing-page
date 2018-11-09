@@ -1,3 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 10%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas: 
+}
+
+header {
+  display: flex;
+  background: orange;
+  flex: 1;
+  align-items: center;
+}
+
+#nav-bar {
+  margin-left: auto;
+}
+
+#nav-bar > ul{
+  display: flex;
+  margin-left: auto;
+  list-style-type: none;
+}
+
+#nav-bar li {
+  flex: 1;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .attribution {
   font-size: .2rem;
 }
