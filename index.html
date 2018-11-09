@@ -38,7 +38,8 @@
           illo quasi? Aperiam cum, distinctio tempore nemo modi veritatis consectetur quo dolor quia molestias, consequatur unde velit veniam quidem!</p>
 
         <div id="video">
-
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/B8y3SSmz4sg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
         </div>
 
       </div>
@@ -104,11 +105,22 @@
 
     <form id="form" action="https://www.freecodecamp.com/email-submit">
       <h2>Contact</h2>
+
       <label>
-        <input id="email" type="email" name="email" placeholder="john.smith@domain-name.com">
+        Name: <input type="text" name="full-name" placeholder="John Smith">
       </label>
 
-      <button id="submit" type="submit" name="button">Submit</button>
+      <label>
+        Email: <input id="email" type="email" name="email" placeholder="john.smith@domain-name.com">
+      </label>
+
+      <fieldset>
+        <legend>Questions? Comments? We'd love to hear from you. Send us a message and we'll get back to you in 1 to 2 business days.</legend>
+        <textarea name="comment"></textarea>
+      </fieldset>
+
+      <button id="submit" type="submit" name="button">Send</button>
+
     </form>
 
     <footer>
