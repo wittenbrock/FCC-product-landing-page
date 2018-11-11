@@ -3,6 +3,15 @@
   padding: 0;
 }
 
+:root {
+  --dark:  #222D3F;
+  --medium-dark: #4F8C6C;
+  --medium: #335941;
+  --medium-light: #77A756;
+  --light: #99BE7F;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
 img {
   width: 10%;
   display: block;
@@ -27,15 +36,16 @@ a {
 /* Master wrapper */
 .wrapper {
   display: grid;
-  grid-template-areas: "header header header header"
-                       "main   main   main   main"
-                       "form   form   form   form"
-                       "footer footer footer footer";
+  grid-template: "nav nav nav nav"
+    "about   about   about   about"
+    "classes classes classes classes"
+    "form      form   form   form"
+    "footer footer footer footer";
 }
 
 /* Inside the header element */
 header {
-  grid-area: header;
+  grid-area: nav;
   display: flex;
   background: orange;
   flex: 1;
@@ -46,7 +56,7 @@ header {
   margin-left: auto;
 }
 
-#nav-bar > ul{
+#nav-bar>ul {
   display: flex;
   margin-left: auto;
   list-style-type: none;
@@ -58,13 +68,13 @@ header {
   padding-right: 1rem;
 }
 
-main {
+/* main {
   grid-area: main;
   display: grid;
   grid-template-areas: "about   about   about"
                        "classes classes classes";
   background: red;
-}
+} */
 
 /* Inside the about element */
 #about {
@@ -73,20 +83,54 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 3rem 0 3rem 0;
+  /* display: grid;
+  grid-template-areas: ". picture ."
+                       ". heading ."
+                       ". about ."
+                      " . video ."; */
+}
+
+#header-img {
+  grid-area: picture;
+  width: 20rem;
+  margin: auto;
+}
+
+#about h2 {
+  /* grid-area: heading; */
+  padding-top: 2rem;
+}
+
+#about p {
+  /* grid-area: about; */
+  width: 50%;
+  padding-top: 0.5rem ;
+  padding-bottom: 2rem;
+}
+
+#video {
+  /* grid-area: video; */
 }
 
 /* Inside the classes element */
 #classes {
   grid-area: classes;
+  background: grey;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "h2    h2    h2      h2"
-                       "ramen sushi onigiri bento"
+                       "ramen sushi onigiri bento";
 }
 
 #classes h2 {
   grid-area: h2;
+  text-align: center;
+}
+
+#ramen, #sushi, #onigiri, #bento {
+  border: 1px solid black;
+  margin: 2rem;
+  padding: 2rem;
 }
 
 #ramen {
@@ -107,23 +151,41 @@ main {
 
 #classes img {
   margin: auto;
+  padding-bottom: 1rem;
+  width: 40%;
+}
+
+#classes ul {
+  width: 80%;
+  margin: auto;
+}
+
+.price {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 1rem;
 }
 
 
 /* Inside the form element */
 form {
   grid-area: form;
+  border: 1px solid black;
+
+  background: green;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: ".       h2       ."
-                       ".       name     ."
-                       ".       email    ."
-                       ".       fieldset ."
-                       ".       button   .";
+                      ".       name     ."
+                      ".       email    ."
+                      ".       fieldset ."
+                      ".       button   .";
 }
 
 form h2 {
   grid-area: h2;
+  text-align: center;
 }
 
 #form-name {
