@@ -4,7 +4,7 @@
 }
 
 :root {
-  --dark:  #222D3F;
+  --dark: #222D3F;
   --medium-dark: #335941;
   --medium: #4F8C6C;
   --medium-light: #77A756;
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  background: var(--dark);;
+  background: var(--dark);
 }
 
 img {
@@ -71,12 +71,11 @@ h1 {
   color: var(--light);
 }
 
-
 #nav-bar {
   margin-left: auto;
 }
 
-#nav-bar > ul {
+#nav-bar>ul {
   display: flex;
   margin-left: auto;
   list-style-type: none;
@@ -128,13 +127,11 @@ header a {
 
 #about p {
   width: 80%;
-  padding-top: 0.5rem ;
+  padding-top: 0.5rem;
   padding-bottom: 2rem;
   display: block;
   margin: auto;
 }
-
-
 
 /* Inside the classes element */
 #classes {
@@ -190,7 +187,6 @@ header a {
   font-weight: bold;
   font-size: 2rem;
   padding-top: 1rem;
-  align-self: flex-end;
 }
 
 /* Inside the video-container */
@@ -215,45 +211,48 @@ header a {
 
 form {
   background: white;
-  width: 40%;
-  height: 40vh;
+  width: 30%;
   margin: 3rem;
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: var(--shadow);
-  display: grid;
-  grid-template-columns: .25fr 1fr .25fr;
-  grid-template-areas: ".       h2       ."
-                      ".       name     ."
-                      ".       email    ."
-                      ".       fieldset ."
-                      ".       button   .";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 form h2 {
-  grid-area: h2;
   text-align: center;
 }
 
-#form-name {
-  grid-area: name;
-}
-
-#form-email {
-  grid-area: email;
-}
-
 form fieldset {
-  grid-area: fieldset;
   border: 0;
 }
 
+fieldset legend {
+  padding-top: 2rem;
+}
+
 form button {
-  grid-area: button;
+  width: 30%;
+  margin: auto;
+  margin-top: 1rem;
+  font-family: inherit;
+  padding: .25rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  background: #2181BF;
+  color: white;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: var(--light);
 }
 
 form textarea {
   width: 100%;
+  height: 5rem;
 }
 
 /* Inside the Footer */
@@ -271,4 +270,44 @@ footer {
 
 .attribution {
   font-size: .2rem;
+}
+
+@media(max-width: 1300px) {
+  #about {
+    width: 50%;
+  }
+
+  #classes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "onigiri bento"
+      "ramen sushi";
+  }
+
+  #ramen, #sushi, #onigiri, #bento {
+    width: 50%;
+  }
+
+  form {
+    width: 40%;
+  }
+}
+
+@media(max-width: 900px) {
+  #about {
+    width: 70%;
+  }
+
+  #classes {
+    display: flex;
+    flex-direction: column;
+    padding-left: 23%;
+  }
+
+  #ramen, #sushi, #onigiri, #bento {
+    width: 50%;
+  }
+
+  form {
+    width: 60%;
+  }
 }
