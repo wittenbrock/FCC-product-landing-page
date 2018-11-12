@@ -22,7 +22,6 @@ body {
 }
 
 img {
-  width: 10%;
   display: block;
   max-width: 100%;
   height: auto;
@@ -48,11 +47,11 @@ a {
 .wrapper {
   display: grid;
   grid-template: "nav nav nav nav"
-    "about   about   about   about"
-    "classes classes classes classes"
-    "video video video video"
-    "form      form   form   form"
-    "footer footer footer footer";
+                 "about   about   about   about"
+                 "classes classes classes classes"
+                 "video video video video"
+                 "form      form   form   form"
+                 "footer footer footer footer";
 }
 
 /* Inside the header element */
@@ -280,7 +279,7 @@ footer {
   #classes {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "onigiri bento"
-      "ramen sushi";
+                         "ramen sushi";
   }
 
   #ramen, #sushi, #onigiri, #bento {
