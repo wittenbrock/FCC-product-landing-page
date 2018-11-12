@@ -88,14 +88,9 @@ h1 {
   padding-right: 1rem;
 }
 
-/* main {
-  grid-area: main;
-  display: grid;
-  grid-template-areas: "about   about   about"
-                       "classes classes classes";
-  background: red;
-} */
-
+header a {
+  color: white;
+}
 
 /* Inside the about-container */
 #about-container {
@@ -127,14 +122,18 @@ h1 {
   width: 50%;
 }
 
+#about h2 {
+  text-align: center;
+}
+
 #about p {
-  width: 60%;
+  width: 80%;
   padding-top: 0.5rem ;
   padding-bottom: 2rem;
   display: block;
   margin: auto;
-
 }
+
 
 
 /* Inside the classes element */
@@ -143,7 +142,7 @@ h1 {
   background: var(--medium);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "ramen sushi onigiri bento";
+  grid-template-areas: "onigiri bento ramen sushi";
 }
 
 #classes h2 {
@@ -191,6 +190,7 @@ h1 {
   font-weight: bold;
   font-size: 2rem;
   padding-top: 1rem;
+  align-self: flex-end;
 }
 
 /* Inside the video-container */
