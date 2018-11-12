@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round|News+Cycle" rel="stylesheet">
   <title>Portland School of Japanese Cuisine</title>
 </head>
 
@@ -26,30 +27,31 @@
     </header>
 
 
+      <div id="about-container">
+        <div id="about">
+          <div class="header-img-container">
+            <figure>
+              <img id="header-img" src="pictures/meal.svg" alt="meal">
+              <figcaption class="sr-only"></figcaption>
+            </figure>
 
-      <div id="about">
+            <figure>
+              <img src="pictures/shrimp.svg" alt="shrimp">
+              <figcaption class="sr-only">A picture of the largest mountain in Japan, Mt. Fuji.</figcaption>
+            </figure>
 
-        <!-- <div id="video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/B8y3SSmz4sg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-          </iframe>
-        </div> -->
+            <figure>
+              <img src="pictures/salad.svg" alt="salad">
+              <figcaption class="sr-only">A picture of the largest mountain in Japan, Mt. Fuji.</figcaption>
+            </figure>
+          </div>
 
-        <figure>
-          <img id="header-img" src="pictures/fuji.svg" alt="Mt. Fuji">
-          <figcaption class="sr-only">A picture of the largest mountain in Japan, Mt. Fuji.</figcaption>
-        </figure>
-
-        <h2>About</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quia beatae, recusandae totam alias explicabo perspiciatis. Asperiores dolorum aperiam provident, soluta voluptatem explicabo debitis est, numquam. Minus modi rerum, ut quam
-          illo quasi? Aperiam cum, distinctio tempore nemo modi veritatis consectetur quo dolor quia molestias, consequatur unde velit veniam quidem!</p>
-
-
-
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quia beatae, recusandae totam alias explicabo perspiciatis. Asperiores dolorum aperiam provident, soluta voluptatem explicabo debitis est, numquam. Minus modi rerum, ut quam
+            illo quasi? Aperiam cum, distinctio tempore nemo modi veritatis consectetur quo dolor quia molestias, consequatur unde velit veniam quidem!</p>
+        </div>
       </div>
 
       <div id="classes">
-        <h2>Classes</h2>
-
         <div id="ramen">
           <figure>
             <img src="pictures/ramen.svg" alt="ramen">
@@ -104,27 +106,42 @@
 
       </div>
 
-
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-      <h2>Register</h2>
-
-      <div id="form-name">
-        <label>Name: <input id="name" type="text" name="full-name" placeholder="John Smith"></label>
+      <div id="video-container">
+        <div id="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/B8y3SSmz4sg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
       </div>
 
-      <div id="form-email">
-        <label>Email: <input id="email" type="email" name="email" placeholder="john.smith@domain-name.com"></label>
-      </div>
+    <div id="form-container">
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
 
-    <fieldset>
-      <legend>Questions? Comments? We'd love to hear from you. <br>
-        Send us a message and we'll get back to you in 1 to 2 business days.</legend>
-      <textarea name="comment"></textarea>
-    </fieldset>
+        <h2>Register</h2>
 
-    <button id="submit" type="submit" name="button">Send</button>
+        <div id="form-name">
+          <label>Name: <input id="name" type="text" name="full-name" placeholder="John Smith"></label>
+        </div>
 
-  </form>
+        <div id="form-email">
+          <label>Email: <input id="email" type="email" name="email" placeholder="john.smith@domain-name.com"></label>
+        </div>
+
+      <fieldset>
+        <legend>Questions? Comments? We'd love to hear from you. <br>
+          Send us a message and we'll get back to you in 1 to 2 business days.</legend>
+        <textarea name="comment"></textarea>
+      </fieldset>
+
+      <button id="submit" type="submit" name="button">Send</button>
+
+    </form>
+  </div>
+
+
+
+
+
+
 
     <footer>
       <p>Portland School of Japanese Cuisine &copy; 2018</p>
