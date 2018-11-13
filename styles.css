@@ -33,6 +33,10 @@ a {
   font-weight: bold;
 }
 
+.hidden {
+  display: none;
+}
+
 /* For screen-readers only */
 .sr-only {
   position: absolute;
@@ -232,7 +236,7 @@ fieldset legend {
   padding-top: 2rem;
 }
 
-form button {
+form input {
   width: 30%;
   margin: auto;
   margin-top: 1rem;
@@ -245,7 +249,7 @@ form button {
   font-weight: bold;
 }
 
-form button:hover {
+form input:hover {
   background: var(--light);
 }
 
