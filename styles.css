@@ -236,7 +236,7 @@ fieldset legend {
   padding-top: 2rem;
 }
 
-form input {
+form #submit {
   width: 30%;
   margin: auto;
   margin-top: 1rem;
@@ -249,7 +249,7 @@ form input {
   font-weight: bold;
 }
 
-form input:hover {
+form #submit:hover {
   background: var(--light);
 }
 
