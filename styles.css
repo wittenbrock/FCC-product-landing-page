@@ -48,7 +48,7 @@ a {
 }
 
 /* Master wrapper */
-.wrapper {
+main {
   display: grid;
   grid-template: "nav nav nav nav"
                  "about   about   about   about"
@@ -198,6 +198,7 @@ header a {
   background: var(--medium-dark);
   display: flex;
   justify-content: center;
+  border: 0;
 }
 
 #video {
