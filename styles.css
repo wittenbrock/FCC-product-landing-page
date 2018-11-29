@@ -1,3 +1,9 @@
+/*
+  ========================================
+  Global
+  ========================================
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +43,12 @@ a {
   display: none;
 }
 
-/* For screen-readers only */
+/*
+  ========================================
+  Screen Readers
+  ========================================
+*/
+
 .sr-only {
   position: absolute;
   left: -10000px;
@@ -47,7 +58,12 @@ a {
   overflow: hidden;
 }
 
-/* Master wrapper */
+/*
+  ========================================
+  Grid Layout
+  ========================================
+*/
+
 main {
   display: grid;
   grid-template: "nav nav nav nav"
@@ -58,7 +74,12 @@ main {
                  "footer footer footer footer";
 }
 
-/* Inside the header element */
+/*
+  ========================================
+  Page Header
+  ========================================
+*/
+
 header {
   grid-area: nav;
   display: flex;
@@ -73,6 +94,16 @@ h1 {
   font-family: 'Crete Round', serif;
   color: var(--light);
 }
+
+header a {
+  color: white;
+}
+
+/*
+  ========================================
+  Navigation Bar
+  ========================================
+*/
 
 #nav-bar {
   margin-left: auto;
@@ -90,11 +121,12 @@ h1 {
   padding-right: 1rem;
 }
 
-header a {
-  color: white;
-}
+/*
+  ========================================
+  About Section
+  ========================================
+*/
 
-/* Inside the about-container */
 #about-container {
   grid-area: about;
   background: var(--medium-dark);
@@ -136,7 +168,12 @@ header a {
   margin: auto;
 }
 
-/* Inside the classes element */
+/*
+  ========================================
+  Classes Section
+  ========================================
+*/
+
 #classes {
   grid-area: classes;
   background: var(--medium);
@@ -192,7 +229,12 @@ header a {
   padding-top: 1rem;
 }
 
-/* Inside the video-container */
+/*
+  ========================================
+  Youtube Video
+  ========================================
+*/
+
 #video-container {
   grid-area: video;
   background: var(--medium-dark);
@@ -205,7 +247,12 @@ header a {
   margin: 3rem;
 }
 
-/* Inside the form-container */
+/*
+  ========================================
+  Form Section
+  ========================================
+*/
+
 #form-container {
   grid-area: form;
   background: var(--medium);
@@ -259,7 +306,12 @@ form textarea {
   height: 5rem;
 }
 
-/* Inside the Footer */
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
 footer {
   grid-area: footer;
   display: flex;
@@ -275,6 +327,12 @@ footer {
 .attribution {
   font-size: .2rem;
 }
+
+/*
+  ========================================
+  Media Queries
+  ========================================
+*/
 
 @media(max-width: 1300px) {
   #about {
