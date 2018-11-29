@@ -229,7 +229,7 @@ header a {
   font-weight: bold;
   font-size: 2rem;
   padding-top: 1rem;
-
+  margin-top: auto;
 }
 
 /*
@@ -243,11 +243,11 @@ header a {
   background: var(--medium-dark);
   display: flex;
   justify-content: center;
-  border: 0;
 }
 
 #video {
   margin: 3rem;
+  border: 0;
 }
 
 /*
