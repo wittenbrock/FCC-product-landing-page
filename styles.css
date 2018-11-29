@@ -131,8 +131,7 @@ header a {
   grid-area: about;
   background: var(--medium-dark);
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 
 .about-panel {
@@ -228,7 +227,6 @@ header a {
   text-align: center;
   font-weight: bold;
   font-size: 2rem;
-  padding-top: 1rem;
   margin-top: auto;
 }
 
@@ -338,41 +336,41 @@ footer {
 */
 
 @media(max-width: 1300px) {
-  #about {
-    width: 50%;
-  }
-
   #classes {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "onigiri bento"
                          "ramen sushi";
+    justify-items: center;
   }
 
-  #ramen, #sushi, #onigiri, #bento {
+  #ramen,
+  #sushi,
+  #onigiri,
+  #bento {
     width: 50%;
-  }
-
-  form {
-    width: 40%;
   }
 }
 
 @media(max-width: 900px) {
-  #about {
-    width: 70%;
+
+  .about-panel {
+    width: 50%;
   }
 
   #classes {
     display: flex;
     flex-direction: column;
-    padding-left: 23%;
+    align-items: center;
   }
 
-  #ramen, #sushi, #onigiri, #bento {
+  #ramen,
+  #sushi,
+  #onigiri,
+  #bento {
+    width: 40%;
+  }
+
+  .form-panel {
     width: 50%;
-  }
-
-  form {
-    width: 60%;
   }
 }
