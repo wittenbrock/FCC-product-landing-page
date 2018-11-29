@@ -28,20 +28,22 @@
 
     <!-- About Section  -->
     <section id="about">
-      <figure class="header-img-container">
-        <figcaption class="sr-only">Three seperate drawings of an Asian mean, shrimp, and a salad in a bowl.</figcaption>
-        <img src="pictures/meal.svg" alt="meal">
-        <img src="pictures/shrimp.svg" alt="shrimp">
-        <img src="pictures/salad.svg" alt="salad">
-      </figure>
+      <div class="about-panel">
+        <figure class="header-img-container">
+          <figcaption class="sr-only">Three seperate images of an Asian meal, a shrimp, and a salad in a bowl.</figcaption>
+          <img src="pictures/meal.svg" alt="meal">
+          <img src="pictures/shrimp.svg" alt="shrimp">
+          <img src="pictures/salad.svg" alt="salad">
+        </figure>
 
-      <h2>Learn with a master</h2>
+        <h2>Learn with a master</h2>
 
-      <p>People worldwide have begun to explore more healthy cooking styles particularly ones that employ vegetables and fish as primary ingredients. For this reason, Japanese cuisine enjoys a growing popularity on its own and is part of a general movement toward “fusion” cooking styles.</p>
+        <p>People worldwide have begun to explore more healthy cooking styles particularly ones that employ vegetables and fish as primary ingredients. For this reason, Japanese cuisine enjoys a growing popularity on its own and is part of a general movement toward “fusion” cooking styles.</p>
 
-      <p>These classes will provide each student a more advanced knowledge and practical application of Japanese cuisine and its preparation.</p>
+        <p>These classes will provide each student a more advanced knowledge and practical application of Japanese cuisine and its preparation.</p>
 
-      <p>Chef Matsuda is an experienced teacher of Japanese culinary arts and a food consultant representing Japanese foods and cuisine in the United States, Europe and Asia with more than 30 years of experience.</p>
+        <p>Chef Matsuda is an experienced teacher of Japanese culinary arts and a food consultant representing Japanese foods and cuisine in the United States, Europe and Asia with more than 30 years of experience.</p>
+      </div>
     </section>
 
     <!-- Classes Section  -->
@@ -108,36 +110,39 @@
     </figure>
 
     <!-- Form  -->
-    <form id="form form-container" action="https://www.freecodecamp.com/email-submit">
-      <h2>Register</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <div class="form-panel">
+        <h2>Register</h2>
 
-      <label id="form-name">Name:
-        <input id="name" type="text" name="full-name" placeholder="John Smith" required>
-      </label>
+        <label id="form-name">Name:
+          <input id="name" type="text" name="full-name" placeholder="John Smith" required>
+        </label>
 
-      <label id="form-email">Email:
-        <input id="email" type="email" name="email" placeholder="john.smith@domain-name.com" required>
-      </label>
+        <label id="form-email">Email:
+          <input id="email" type="email" name="email" placeholder="john.smith@domain-name.com" required>
+        </label>
 
-      <label id="form-dropdown">Select a class:
-        <select id="dropdown">
-          <option id="onigiri-option" value="onigiri">Onigiri</option>
-          <option id="bento-option" value="bento">Bento</option>
-          <option id="ramen-option" value="ramen">Ramen</option>
-          <option id="sushi-option" value="sushi">Sushi</option>
-        </select>
-      </label>
+        <label id="form-dropdown">Select a class:
+          <select id="dropdown">
+            <option id="onigiri-option" value="onigiri">Onigiri</option>
+            <option id="bento-option" value="bento">Bento</option>
+            <option id="ramen-option" value="ramen">Ramen</option>
+            <option id="sushi-option" value="sushi">Sushi</option>
+          </select>
+        </label>
 
-      <label id="form-students">How many students are in your group?
-        <input type="number">
-      </label>
+        <label id="form-students">How many students are in your group?
+          <input type="number">
+        </label>
 
-      <fieldset>
-        <legend>We'd love to hear from you. Send us a message and we'll get back to you in 1 to 2 business days.</legend>
-        <textarea name="comment"></textarea>
-      </fieldset>
+        <fieldset>
+          <legend>We'd love to hear from you. Send us a message and we'll get back to you in 1 to 2 business days.</legend>
+          <textarea name="comment"></textarea>
+        </fieldset>
 
-      <input id="submit" type="submit" name="button">
+        <input id="submit" type="submit" name="button">
+      </div>
+
     </form>
 
     <!-- Footer  -->
@@ -149,7 +154,7 @@
 
   </main>
   <!-- Master Wrapper Ends -->
-  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>

@@ -133,7 +133,9 @@ header a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
+.about-panel {
   background: white;
   width: 40%;
   margin: 3rem;
@@ -256,7 +258,9 @@ form {
   background: var(--medium);
   display: flex;
   justify-content: center;
+}
 
+.form-panel {
   background: white;
   width: 30%;
   margin: 3rem;
