@@ -127,15 +127,13 @@ header a {
   ========================================
 */
 
-#about-container {
+#about {
   grid-area: about;
   background: var(--medium-dark);
   display: flex;
   flex-direction: column;
   align-items: center;
-}
 
-#about {
   background: white;
   width: 40%;
   margin: 3rem;
@@ -253,14 +251,12 @@ header a {
   ========================================
 */
 
-#form-container {
+form {
   grid-area: form;
   background: var(--medium);
   display: flex;
   justify-content: center;
-}
 
-form {
   background: white;
   width: 30%;
   margin: 3rem;
